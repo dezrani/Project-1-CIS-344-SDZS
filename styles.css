@@ -1,0 +1,153 @@
+/* Programmer: Sean Derrick Sandoval
+Purpose: Stylesheet for Mayari Tattoos
+Date Created: 9/25/2024 */
+
+/* --------- Nav Bar --------- */
+.banner {
+    display: flex; /* Use Flexbox to align children in a row */
+    justify-content: space-between; /* Space between the brandHead and navbar */
+    align-items: center; /* Center items vertically */
+    padding: 10px 30px; /* Add some padding */
+    background-color: #000000; /* Background color */
+}
+
+.brandTitle {
+    color: #fffefa;
+}
+
+.navbar ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Display navbar items in a row */
+}
+
+.navbar li {
+    margin-left: 20px; /* Space between navbar items */
+
+}
+
+.brandTitle a, .navbar a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Change link color */
+}
+
+.brandTitle a:link, .navbar a:link { text-decoration: none; color: #fffefa; } /* Changes link color to cooler one hehe */
+
+.brandTitle a:visited, .navbar a:visited { text-decoration: none; color: #fffefa; } /* Keeps the color the same */
+
+.brandTitle a:hover, .navbar a:hover { text-decoration: none; cursor: pointer; border-bottom: solid #fffefa; } /* Underlines whatever is selected */
+
+.brandTitle a:active, .navbar a:active { text-decoration: none; } 
+
+/* --------- Artist List --------- */
+
+.artist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.artist-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.artist-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.artist-item p {
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.artist-item button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.artist-item button:hover {
+    background-color: #0056b3;
+}
+
+.artist-item:hover {
+    transform: translateY(-5px);
+}
+
+/* --------- Footer Info --------- */
+.footer-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer-info-item {
+    width: 300px;
+    height: 100px;
+}
+
+/* --------- Gallery Showcase --------- */
+.gallery-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.gallery-grid img {
+    width: 300px;
+    height: 300px;
+    border-radius: 4px;
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-container button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.gallery-container button a {
+    color: white;
+    text-decoration: none;
+}
+
+.gallery-container button:hover {
+    background-color: #0056b3;
+}
